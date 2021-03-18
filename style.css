@@ -1,0 +1,263 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.main-navbar {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  position: fixed;
+  top: 0;
+}
+
+.main-navbar > a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-navbar a{
+  padding: 1em;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown > a {
+  color: white;
+  width: min-content;
+}
+
+.dropdown > ul,
+.tour-dates ul,
+.contact-details ul {
+  list-style-type: none;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+}
+
+.dropdown-content a {
+  color: black;
+}
+.tour-dates ul,
+.main-navbar > a:hover,
+.dropdown:hover > a,
+.dropdown-content a:hover,
+.btn:hover{
+  background-color: rgb(197, 188, 188);
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: white;
+}
+
+.image img {
+  width: 100%;
+}
+
+.band {
+  height: fit-content;
+  width: 768px;
+  margin: auto;
+  padding: 62px 16px;
+}
+
+.band h2,
+.band h5,
+.tour-dates h2,
+.tour-dates h5,
+.contact h2,
+.contact h5 {
+  text-align: center;
+}
+
+.band h2,
+.tour-dates h2,
+.contact h2 {
+  font-size: 30px;
+  margin: 35px 0;
+}
+
+.band h5,
+.tour-dates h5,
+.contact h5 {
+  margin: 25px 0;
+}
+
+.band p {
+  text-align: justify;
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.band-members {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+}
+
+.member p{
+  text-align: center;
+}
+
+.member img {
+  height: 153.583px;
+  width: 153.583px;
+}
+
+
+.background {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.tour-dates {
+  width: 790px;
+  height: 850px;
+  margin: auto;
+  padding: 64px 16px;
+}
+
+.tour-dates h2,
+.tour-dates h5 {
+  color: white;
+}
+
+.tour-dates ul {
+  /* display: block; */
+  margin: 2em 0;
+}
+
+.tour-dates li {
+  background-color: white;
+  padding: 10px 16px;
+}
+
+.tour-dates li:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
+
+.status {
+  background-color: #f44336 !important;
+  padding: 0.2em 0.4em;
+  color: white;
+  margin-left: 15px;
+}
+
+.last {
+  display: flex;
+  justify-content: space-between;
+}
+
+.num {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+  padding: 0.2em 0.5em;
+}
+
+.concert-locations {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.location {
+  background-color: white;
+}
+
+.location h6,
+.location p {
+  margin: 16px 0;
+}
+
+.location img {
+  height: 183.983px;
+  width: 100%;
+}
+
+.btn {
+  border: 0;
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
+}
+
+.location-details {
+  width:  213.317px;
+  height: 204.5px;  
+  padding: 0px 16px;
+  font-size: 15px;
+}
+
+.contact {
+  height: max-content;
+  width: 800px;
+  margin: auto;
+  padding: 64px 8px;
+  /* display: grid; */
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-details img{
+  width: 20px;
+  height: 20px;
+}
+
+.contact .btn {
+  position: absolute;
+  right: 0;
+}
+
+.form input {
+  min-width: 165px;
+  padding: 1em 5px;
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 168px);
+}
+
+[placeholder="Message"] {
+  grid-column: 1 / 3;
+}
+
+.a {
+  margin: 16px 0;
+  position: relative;
+}
+
+
+footer {
+  height: 40vh;
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+}
+
+footer img  {
+  width: 50px;
+  height: 50px;
+}
